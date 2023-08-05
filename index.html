@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center text-6xl bg-orange-300 p-4">Geometry Formula</h1>
+    </header>
+    <main>
+      <section>
+        <div class="grid grid-cols-4 gap-4 p-6">
+          <div class="col-span-3 grid grid-cols-3 gap-4">
+            <div
+              class="col-span-1 border rounded-lg shadow bg-white p-4 text-center"
+              id="triangle-card"
+            >
+              <div class="flex items-center justify-center">
+                <img src="images/triangle.png" width="120" alt="" />
+              </div>
+              <h2 class="text-xl font-semibold m-2" id ='triangle-name'>triangle</h2>
+              <p>Area(A)=.5 x b x h</p>
+              <div class="flex m-2">
+                <input
+                  type="text"
+                  class="bg-gray-200 w-1/4 mr-2 ml-2"
+                  id="triangle-input-base"
+                />cm
+                <input
+                  type="text"
+                  class="bg-gray-200 w-1/4 mr-2 ml-2"
+                  id="triangle-input-height"
+                />cm
+              </div>
+              <button
+                class="bg-blue-300 p-2 rounded-md w-1/2"
+                id="triangle-button"
+              >
+                Calculate
+              </button>
+            </div>
+            <div
+              class="col-span-1 border rounded-lg shadow bg-white p-4 text-center"
+            >
+              <div class="flex items-center justify-center">
+                <img src="images/rectangle.png" width="120" alt="" />
+              </div>
+              <h2 class="text-xl font-semibold m-2">Rectangle</h2>
+              <p>Area(A)=w x l</p>
+              <div class="flex m-2">
+                <input
+                  type="text"
+                  class="bg-gray-200 w-1/4 mr-2 ml-2"
+                  id="rectangle-input-width"
+                />cm
+                <input
+                  type="text"
+                  class="bg-gray-200 w-1/4 mr-2 ml-2"
+                  id="rectangle-input-length"
+                />cm
+              </div>
+              <button
+                class="bg-blue-300 p-2 rounded-md w-1/2"
+                id="rectangle-button"
+              >
+                Calculate
+              </button>
+            </div>
+            <div
+              class="col-span-1 border rounded-lg shadow bg-white p-4 text-center"
+            >
+              <div class="flex items-center justify-center">
+                <img src="images/parallelogram.png" width="120" alt="" />
+              </div>
+              <h2 class="text-xl font-semibold m-2">Parelellogram</h2>
+              <p>Area(A)=b x h</p>
+              <div class="flex m-2">
+                <input
+                  type="text"
+                  class="bg-gray-200 w-1/4 mr-2 ml-2"
+                  id="parallelogram-input-base"
+                />cm
+                <input
+                  type="text"
+                  class="bg-gray-200 w-1/4 mr-2 ml-2"
+                  id="parallelogram-input-height"
+                />cm
+              </div>
+              <button
+                class="bg-blue-300 p-2 rounded-md w-1/2"
+                id="parallelogram-button"
+              >
+                Calculate
+              </button>
+            </div>
+            <div
+              class="col-span-1 border rounded-lg shadow bg-white p-4 text-center"
+            >
+              <div class="flex items-center justify-center">
+                <img src="images/rhombus.png" width="120" alt="" />
+              </div>
+              <h2 class="text-xl font-semibold m-2">Rhombus</h2>
+              <p>Area(A)=.5 x d1 x d2</p>
+              <div class="flex m-2">
+                <input
+                  type="text"
+                  class="bg-gray-200 w-1/4 mr-2 ml-2"
+                  id="rhombus-input-d1"
+                />cm
+                <input
+                  type="text"
+                  class="bg-gray-200 w-1/4 mr-2 ml-2"
+                  id="rhombus-input-d2"
+                />cm
+              </div>
+              <button
+                class="bg-blue-300 p-2 rounded-md w-1/2"
+                id="rhombus-button"
+              >
+                Calculate
+              </button>
+            </div>
+            <div
+              class="col-span-1 border rounded-lg shadow bg-white p-4 text-center"
+            >
+              <div class="flex items-center justify-center">
+                <img src="images/pentagon.png" width="120" alt="" />
+              </div>
+              <h2 class="text-xl font-semibold m-2">Pentagon</h2>
+              <p>Area(A)=0.5 x p x b</p>
+              <div class="flex m-2">
+                <input
+                  type="text"
+                  class="bg-gray-200 w-1/4 mr-2 ml-2"
+                  id="pentagon-input-p"
+                />cm
+                <input
+                  type="text"
+                  class="bg-gray-200 w-1/4 mr-2 ml-2"
+                  id="pentagon-input-base"
+                />cm
+              </div>
+              <button
+                class="bg-blue-300 p-2 rounded-md w-1/2"
+                id="pentagon-button"
+              >
+                Calculate
+              </button>
+            </div>
+            <div
+              class="col-span-1 border rounded-lg shadow bg-white p-4 text-center"
+            >
+              <div class="flex items-center justify-center">
+                <img src="images/ellipse.png" width="120" alt="" />
+              </div>
+              <h2 class="text-xl font-semibold m-2">Ellipse</h2>
+              <p>Area(A)=pi x a x b</p>
+              <div class="flex m-2">
+                <input
+                  type="text"
+                  class="bg-gray-200 w-1/4 mr-2 ml-2"
+                  id="ellipse-input-a"
+                />cm
+                <input
+                  type="text"
+                  class="bg-gray-200 w-1/4 mr-2 ml-2"
+                  id="ellipse-input-base"
+                />cm
+              </div>
+              <button
+                class="bg-blue-300 p-2 rounded-md w-1/2"
+                id="ellipse-button"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+          <div class="col-span-1 bg-gray-200 p-4">
+            <!-- Content for the sidebar goes here -->
+            <h2 class="text-lg font-semibold mb-4">Area calculation</h2>
+            <div id="area-container">
+              <ol type="1" id="area-container"></ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/utility.js"></script>
+    <script src="js/calculate.js"></script>
+  </body>
+</html>
